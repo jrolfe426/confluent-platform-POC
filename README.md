@@ -1,4 +1,4 @@
-# confluent-platform-POC
+# Confluent Platform POC
 ## 4 node environment using VMs to deploy a CP environment
 
 
