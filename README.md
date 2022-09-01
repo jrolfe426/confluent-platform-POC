@@ -15,5 +15,22 @@ This tutorial deploys the VMs on GKE VMs, Debian 10, us-central1-c, with the fol
 | jr-connect-sr-restproxy | connect, schema registry, restproxy|    e2-medium  | 10.1.0.9 | 35.xxx.xxx.xxx |
 | jr-controlcenter        | control center     | e2-standard-2 | 10.1.0.10 | 35.xxx.xxx.xxx |
 
-Networking - All VMs are in the same VPC/subnet.  Each VM will need a firewall rule to allow port 22/SSH.  This rule should be added at the subnet.
+Networking - All VMs are in the same VPC/subnet.  If the preferred access method is to use a local machine to access the CP VMs, a firewall rule will need to be allowed on port 22/SSH.  This rule should be added at the subnet.  Suggested (easy) method is to connect to the VM directly from the google console.
 
+### VM Setup
+In order to deploy Confluent on the Linux Debian 10 VMs, there is a series of initial steps that must be followed on each Virtual Machine:
+
+Each of the following commands to be run from the linux shell - 
+
+1.  sudo apt-get update
+2.  sudo apt-get upgrade
+3.  sudo apt-get install wget
+4.  sudo apt-get -y install gnupg
+5.  sudo wget -qO - https://packages.confluent.io/deb/7.2/archive.key | sudo apt-key add -
+6.  sudo apt-get install software-properties-common
+7.  sudo apt-get update
+8.  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/7.2 stable main"
+    sudo add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"9.  sudo apt-get update && sudo apt-get install   confluent-platform
+9.  sudo apt-get update && sudo apt-get install confluent-platform
+10.  sudo apt-get update
+11.  sudo apt install default-jre
