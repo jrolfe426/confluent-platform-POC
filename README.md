@@ -18,10 +18,10 @@ This tutorial deploys the VMs on GKE VMs, Debian 10, us-central1-c, with the fol
 
 | VM Name                 | Services           |      VM Size  | Internal IP | External IP |
 | ----------------------- |:------------------:| -------------:| -----------:| -----------:|
-| jr-zookeeper-broker1    | zookeeper, broker1 | e2-standard-2 | 10.1.0.3   | 35.xxx.xxx.xxx
-| jr-ksqldb              | ksqldb             |   e2-medium   | 10.1.0.6 | 35.xxx.xxx.xxx |
-| jr-connect-sr-restproxy | connect, schema registry, restproxy|    e2-medium  | 10.1.0.9 | 35.xxx.xxx.xxx |
-| jr-controlcenter        | control center     | e2-standard-2 | 10.1.0.10 | 35.xxx.xxx.xxx |
+| jr-zookeeper-broker1    | zookeeper, broker1 | e2-standard-2 | 10.1.0.3   | 
+| jr-ksqldb              | ksqldb             |   e2-medium   | 10.1.0.6 |  |
+| jr-connect-sr-restproxy | connect, schema registry, restproxy|    e2-medium  | 10.1.0.9 |  |
+| jr-controlcenter        | control center     | e2-standard-2 | 10.1.0.10 |  |
 
 Networking - All VMs are in the same VPC/subnet.  If the preferred access method is to use a local machine to access the CP VMs, a firewall rule will need to be allowed on port 22/SSH.  This rule should be added at the subnet.  Suggested (easy) method is to connect to the VM directly from the google console.
 
