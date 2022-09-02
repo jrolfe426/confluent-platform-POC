@@ -50,8 +50,8 @@ Run each of the following command from the linux shell -
      - sudo vi zookeeper.properties
      - edit the file to resemble the example below. Ensure to add your VM's internal IP address
      <img width="774" alt="Screen Shot 2022-09-02 at 1 27 39 PM" src="https://user-images.githubusercontent.com/100879140/188215617-98d51da2-3944-4726-80ff-2a8454fcc39d.png">
-  - Broker
-  2. Log into designated VM hosting zookeeper/broker and navigate to /etc/kafka/server.properties
+  - Broker Deployment
+  1. Log into designated VM hosting zookeeper/broker and navigate to /etc/kafka/server.properties
      - sudo vi server.properties
      - edit the file to resemble the example below.  
     
@@ -63,11 +63,11 @@ Run each of the following command from the linux shell -
 <img width="1033" alt="Screen Shot 2022-09-02 at 1 39 52 PM" src="https://user-images.githubusercontent.com/100879140/188217406-cee0296f-0342-489e-b6ff-b9578d557b06.png">
 <img width="922" alt="Screen Shot 2022-09-02 at 1 41 02 PM" src="https://user-images.githubusercontent.com/100879140/188217552-bdcf31ec-e9a1-4a1d-9fc2-d807c050e9d1.png">
 
-  3. Once both properties files are updated and saved you can start the services:
+  2. Once both properties files are updated and saved you can start the services:
      - Zookeeper:  systemctrl start confluent-zookeeper
      - Broker: systemctl start confluent-server
 
-  4. Check the status of both services:
+  3. Check the status of both services:
      - systemctl status confluent*
      - Below is a screenshot of a successful run
 <img width="1029" alt="Screen Shot 2022-09-02 at 1 50 28 PM" src="https://user-images.githubusercontent.com/100879140/188218807-4893a970-fac2-4268-b191-c261acd3f804.png">
