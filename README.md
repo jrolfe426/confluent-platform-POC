@@ -39,14 +39,27 @@ Run each of the following command from the linux shell -
 7.  sudo apt-get update
 8.  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/7.2 stable main"
     sudo add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"9.  sudo apt-get update && sudo apt-get install   confluent-platform
-9.  sudo apt-get update && sudo apt-get install confluent-platform
+9.  sudo apt-get update && sudo apt-get install confluent-platform<img width="889" alt="Screen Shot 2022-09-02 at 1 37 03 PM" src="https://user-images.githubusercontent.com/100879140/188216992-f23b545e-d871-4f5b-a3c5-c89f20c5a869.png">
+
 10.  sudo apt-get update
 11.  sudo apt install default-jre
 
 ## CP Configuration:
 - Zookeeper-Broker Deployment
   - Zookeeper
-  1. Log into designated VM hosting zookeeper and navigate to /etc/kafka/zookeeper.properties
+  1. Log into designated VM hosting zookeeper/broker and navigate to /etc/kafka/zookeeper.properties
      - sudo vi zookeeper.properties
-     - edit the file
-     p
+     - edit the file to resemble the example below. Ensure to add your VM's internal IP address
+     <img width="774" alt="Screen Shot 2022-09-02 at 1 27 39 PM" src="https://user-images.githubusercontent.com/100879140/188215617-98d51da2-3944-4726-80ff-2a8454fcc39d.png">
+  - Broker
+  1. Log into designated VM hosting zookeeper/broker and navigate to /etc/kafka/server.properties
+     - sudo vi server.properties
+     - edit the file to resemble the example below.  
+    
+
+     <img width="884" alt="Screen Shot 2022-09-02 at 1 36 08 PM" src="https://user-images.githubusercontent.com/100879140/188216851-d65e3b60-60ae-4d4c-9de6-3548a120edc9.png">
+
+     
+<img width="1029" alt="Screen Shot 2022-09-02 at 1 39 17 PM" src="https://user-images.githubusercontent.com/100879140/188217313-3f084360-7d93-427c-8d8f-24252aca811c.png">
+<img width="1033" alt="Screen Shot 2022-09-02 at 1 39 52 PM" src="https://user-images.githubusercontent.com/100879140/188217406-cee0296f-0342-489e-b6ff-b9578d557b06.png">
+<img width="922" alt="Screen Shot 2022-09-02 at 1 41 02 PM" src="https://user-images.githubusercontent.com/100879140/188217552-bdcf31ec-e9a1-4a1d-9fc2-d807c050e9d1.png">
