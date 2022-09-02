@@ -11,6 +11,8 @@ The following environment is not a best practice for production or staging as th
   - Debian 10 e2-standard-2 (2)  
   - Debian 10 e2-medium (2)
   - VMs to all belong to a common VPC/Subnet
+  - Basic admin experience in GCP
+  - Basic text editing experience e.g VIM
 
 This tutorial deploys the VMs on GKE VMs, Debian 10, us-central1-c, with the following VM/Service breakout:
 
@@ -26,7 +28,7 @@ Networking - All VMs are in the same VPC/subnet.  If the preferred access method
 ### VM Setup
 In order to deploy Confluent on the Linux Debian 10 VMs, there is a series of initial steps that must be followed on each Virtual Machine:
 
-Each of the following commands to be run from the linux shell - 
+Run each of the following command from the linux shell - 
 
 1.  sudo apt-get update
 2.  sudo apt-get upgrade
@@ -40,3 +42,11 @@ Each of the following commands to be run from the linux shell -
 9.  sudo apt-get update && sudo apt-get install confluent-platform
 10.  sudo apt-get update
 11.  sudo apt install default-jre
+
+## CP Configuration:
+- Zookeeper-Broker Deployment
+  - Zookeeper
+  1. Log into designated VM hosting zookeeper and navigate to /etc/kafka/zookeeper.properties
+     - sudo vi zookeeper.properties
+     - edit the file
+     p
