@@ -70,4 +70,17 @@ Run each of the following command from the linux shell -
   3. Check the status of both services:
      - systemctl status confluent*
      - Below is a screenshot of a successful run
-      <img width="1029" alt="Screen Shot 2022-09-02 at 1 50 28 PM" src="https://user-images.githubusercontent.com/100879140/188218807-4893a970-fac2-4268-b191-c261acd3f804.png">
+        <img width="1029" alt="Screen Shot 2022-09-02 at 1 50 28 PM" src="https://user-images.githubusercontent.com/100879140/188218807-4893a970-fac2-4268-b191-c261acd3f804.png">
+- KSQLDB Deployment
+  - kSQLDB
+  1. Log into designated VM hosting ksqldb and navigate to /etc/ksqldb/ksql-production-server.properties
+     - sudo vi ksql-production-server.properties
+     - edit the file to resemble the example below.
+      <img width="879" alt="Screen Shot 2022-09-06 at 10 13 33 AM" src="https://user-images.githubusercontent.com/100879140/188671840-492b11b1-706b-499b-9974-cdfd2d8583de.png">
+      <img width="881" alt="Screen Shot 2022-09-06 at 10 14 26 AM" src="https://user-images.githubusercontent.com/100879140/188672046-da9f0e31-4673-4e74-a5d4-6fbec0ac1cd0.png">
+  2. Once the properties file is updated and saved you can start the services:
+     - ksqldb:  sudo systemctrl start confluent-ksqldb
+  3. Check the status of the service:
+     - systemctl status confluent*
+     - Below is a screenshot of a successful run
+       <img width="887" alt="Screen Shot 2022-09-06 at 10 17 56 AM" src="https://user-images.githubusercontent.com/100879140/188672774-a07b42c0-e6ae-475e-b0f9-61aa98c70fbc.png">
