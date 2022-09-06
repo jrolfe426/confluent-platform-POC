@@ -110,4 +110,11 @@ Run each of the following command from the linux shell -
      - systemctl status confluent*
      - Below is a screenshot of a successful run
         <img width="886" alt="Screen Shot 2022-09-06 at 10 55 39 AM" src="https://user-images.githubusercontent.com/100879140/188681187-a2fdc652-1687-465d-bd5d-b93ad5ac1076.png">
-
+- Confluent Control Center
+  - Control Center
+  1. Log into designated VM hosting Control Center and navigate to /etc/confluent-control-center
+     - sudo vi control-center-production.properties
+     - edit the file to resemble the example below:
+      <img width="1045" alt="Screen Shot 2022-09-06 at 11 09 18 AM" src="https://user-images.githubusercontent.com/100879140/188684081-fe1c5034-09bf-4b4c-a768-9285f2727b0b.png">
+      <img width="929" alt="Screen Shot 2022-09-06 at 11 10 13 AM" src="https://user-images.githubusercontent.com/100879140/188684255-08d287b9-d371-4212-b4a4-9851cafd2fcc.png">
+      ![Uploading Screen Shot 2022-09-06 at 11.10.44 AM.png…]()
