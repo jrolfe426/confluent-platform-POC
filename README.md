@@ -84,3 +84,10 @@ Run each of the following command from the linux shell -
      - systemctl status confluent*
      - Below is a screenshot of a successful run
        <img width="887" alt="Screen Shot 2022-09-06 at 10 17 56 AM" src="https://user-images.githubusercontent.com/100879140/188672774-a07b42c0-e6ae-475e-b0f9-61aa98c70fbc.png">
+- Connect, Schema Registry, Restproxy Deployment
+  - Connect
+  1. Log into designated VM hosting Connect and navigate to /etc/kafka/connect-distributed.properties
+     - sudo vi connect-distributed.properties
+     - edit the file to resemble the example below:
+        <img width="883" alt="Screen Shot 2022-09-06 at 10 34 47 AM" src="https://user-images.githubusercontent.com/100879140/188676536-744a62fd-b459-4799-b1fa-e997482bff48.png">
+        <img width="885" alt="Screen Shot 2022-09-06 at 10 35 44 AM" src="https://user-images.githubusercontent.com/100879140/188676729-6a9a34e9-e7fa-46d8-a773-b40b39cc63a2.png">
