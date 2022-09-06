@@ -124,4 +124,6 @@ Run each of the following command from the linux shell -
      - systemctl status confluent*
      - Below is a screenshot of a successful run
         <img width="1373" alt="Screen Shot 2022-09-06 at 11 18 00 AM" src="https://user-images.githubusercontent.com/100879140/188685734-2e988428-9196-46fa-8e9a-b37057904ff4.png">
+  4. Log into the Control Center UI by accessing the public IP address assigned to the Control Center VM - "xxx.xxx.xxx.xxx:9021".  Ensure that the cluster is healthy and that the ksqlDB and connect clusters are attached.
 
+        <img width="850" alt="Screen Shot 2022-09-06 at 11 27 43 AM" src="https://user-images.githubusercontent.com/100879140/188687659-76936696-899c-462d-8cbe-89b6a0f0fe86.png">
