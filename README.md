@@ -84,7 +84,7 @@ Run each of the following command from the linux shell -
      - systemctl status confluent*
      - Below is a screenshot of a successful run
        <img width="887" alt="Screen Shot 2022-09-06 at 10 17 56 AM" src="https://user-images.githubusercontent.com/100879140/188672774-a07b42c0-e6ae-475e-b0f9-61aa98c70fbc.png">
-- Connect, Schema Registry, Restproxy Deployment
+- Connect, Schema Registry, Rest Proxy Deployment
   - Connect
   1. Log into designated VM hosting Connect and navigate to /etc/kafka/connect-distributed.properties
      - sudo vi connect-distributed.properties
@@ -96,3 +96,18 @@ Run each of the following command from the linux shell -
      - sudo vi schema-registry.properties
      - edit the file to resemble the example below:
        <img width="889" alt="Screen Shot 2022-09-06 at 10 40 33 AM" src="https://user-images.githubusercontent.com/100879140/188677842-00bb0b24-29af-4c65-9304-715fb67f55af.png">
+   - Rest Proxy
+  1.  Log into designated VM hosting Rest Proxy and navigate to /etc/kafka-rest/kafka-rest.properties
+      - sudo vi kafka-rest.propertes
+      - edit the file to resemble the example below:
+        <img width="881" alt="Screen Shot 2022-09-06 at 10 50 35 AM" src="https://user-images.githubusercontent.com/100879140/188680063-8c3ae73e-48d5-4788-b1df-fb3c08081d56.png">
+  2. Once both properties files are updated and saved you can start the services:
+     - Connect:  sudo systemctrl start confluent-kafka-connect
+     - Schema Registry: sudo systemctl start confluent-schema-registry
+     - Rest Proxy: sudo systemctl start confluent-kafka-rest
+
+  3. Check the status of the three services:
+     - systemctl status confluent*
+     - Below is a screenshot of a successful run
+        <img width="886" alt="Screen Shot 2022-09-06 at 10 55 39 AM" src="https://user-images.githubusercontent.com/100879140/188681187-a2fdc652-1687-465d-bd5d-b93ad5ac1076.png">
+
