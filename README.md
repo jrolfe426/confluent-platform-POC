@@ -117,4 +117,5 @@ Run each of the following command from the linux shell -
      - edit the file to resemble the example below:
       <img width="1045" alt="Screen Shot 2022-09-06 at 11 09 18 AM" src="https://user-images.githubusercontent.com/100879140/188684081-fe1c5034-09bf-4b4c-a768-9285f2727b0b.png">
       <img width="929" alt="Screen Shot 2022-09-06 at 11 10 13 AM" src="https://user-images.githubusercontent.com/100879140/188684255-08d287b9-d371-4212-b4a4-9851cafd2fcc.png">
-      ![Uploading Screen Shot 2022-09-06 at 11.10.44 AM.png…]()
+      <img width="893" alt="Screen Shot 2022-09-02 at 5 22 34 PM" src="https://user-images.githubusercontent.com/100879140/188684817-b5ab913e-a336-4a48-a0a4-053c3fe54ad9.png">
+
