@@ -91,3 +91,8 @@ Run each of the following command from the linux shell -
      - edit the file to resemble the example below:
         <img width="883" alt="Screen Shot 2022-09-06 at 10 34 47 AM" src="https://user-images.githubusercontent.com/100879140/188676536-744a62fd-b459-4799-b1fa-e997482bff48.png">
         <img width="885" alt="Screen Shot 2022-09-06 at 10 35 44 AM" src="https://user-images.githubusercontent.com/100879140/188676729-6a9a34e9-e7fa-46d8-a773-b40b39cc63a2.png">
+  - Schema Registry
+  1. Log into designated VM hosting Schema Registry and navigate to /etc/schema-registry/schema-registry.properties
+     - sudo vi schema-registry.properties
+     - edit the file to resemble the example below:
+       <img width="889" alt="Screen Shot 2022-09-06 at 10 40 33 AM" src="https://user-images.githubusercontent.com/100879140/188677842-00bb0b24-29af-4c65-9304-715fb67f55af.png">
