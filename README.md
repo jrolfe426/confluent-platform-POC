@@ -59,9 +59,9 @@ Run each of the following command from the linux shell -
      <img width="884" alt="Screen Shot 2022-09-02 at 1 36 08 PM" src="https://user-images.githubusercontent.com/100879140/188216851-d65e3b60-60ae-4d4c-9de6-3548a120edc9.png">
 
      
-<img width="1029" alt="Screen Shot 2022-09-02 at 1 39 17 PM" src="https://user-images.githubusercontent.com/100879140/188217313-3f084360-7d93-427c-8d8f-24252aca811c.png">
-<img width="1033" alt="Screen Shot 2022-09-02 at 1 39 52 PM" src="https://user-images.githubusercontent.com/100879140/188217406-cee0296f-0342-489e-b6ff-b9578d557b06.png">
-<img width="922" alt="Screen Shot 2022-09-02 at 1 41 02 PM" src="https://user-images.githubusercontent.com/100879140/188217552-bdcf31ec-e9a1-4a1d-9fc2-d807c050e9d1.png">
+      <img width="1029" alt="Screen Shot 2022-09-02 at 1 39 17 PM" src="https://user-images.githubusercontent.com/100879140/188217313-3f084360-7d93-427c-8d8f-24252aca811c.png">
+      <img width="1033" alt="Screen Shot 2022-09-02 at 1 39 52 PM" src="https://user-images.githubusercontent.com/100879140/188217406-cee0296f-0342-489e-b6ff-b9578d557b06.png">
+      <img width="922" alt="Screen Shot 2022-09-02 at 1 41 02 PM" src="https://user-images.githubusercontent.com/100879140/188217552-bdcf31ec-e9a1-4a1d-9fc2-d807c050e9d1.png">
 
   2. Once both properties files are updated and saved you can start the services:
      - Zookeeper:  systemctrl start confluent-zookeeper
@@ -70,4 +70,4 @@ Run each of the following command from the linux shell -
   3. Check the status of both services:
      - systemctl status confluent*
      - Below is a screenshot of a successful run
-<img width="1029" alt="Screen Shot 2022-09-02 at 1 50 28 PM" src="https://user-images.githubusercontent.com/100879140/188218807-4893a970-fac2-4268-b191-c261acd3f804.png">
+      <img width="1029" alt="Screen Shot 2022-09-02 at 1 50 28 PM" src="https://user-images.githubusercontent.com/100879140/188218807-4893a970-fac2-4268-b191-c261acd3f804.png">
