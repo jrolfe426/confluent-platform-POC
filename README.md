@@ -71,11 +71,11 @@ Run each of the following command from the linux shell -
      - systemctl status confluent*
      - Below is a screenshot of a successful run
         <img width="1029" alt="Screen Shot 2022-09-02 at 1 50 28 PM" src="https://user-images.githubusercontent.com/100879140/188218807-4893a970-fac2-4268-b191-c261acd3f804.png">
-- KSQLDB Deployment
-  - kSQLDB
+- ksqlDB Deployment
+  - ksqlDB
   1. Log into designated VM hosting ksqldb and navigate to /etc/ksqldb/ksql-production-server.properties
      - sudo vi ksql-production-server.properties
-     - edit the file to resemble the example below.
+     - edit the file to resemble the example below:
       <img width="879" alt="Screen Shot 2022-09-06 at 10 13 33 AM" src="https://user-images.githubusercontent.com/100879140/188671840-492b11b1-706b-499b-9974-cdfd2d8583de.png">
       <img width="881" alt="Screen Shot 2022-09-06 at 10 14 26 AM" src="https://user-images.githubusercontent.com/100879140/188672046-da9f0e31-4673-4e74-a5d4-6fbec0ac1cd0.png">
   2. Once the properties file is updated and saved you can start the services:
@@ -122,7 +122,7 @@ Run each of the following command from the linux shell -
      - Control Center:  sudo systemctrl start confluent-control-center
   3. Check the status of service:
      - systemctl status confluent*
-     - Below is a screenshot of a successful run
+     - Below is a screenshot of a successful run:
         <img width="1373" alt="Screen Shot 2022-09-06 at 11 18 00 AM" src="https://user-images.githubusercontent.com/100879140/188685734-2e988428-9196-46fa-8e9a-b37057904ff4.png">
   4. Log into the Control Center UI by accessing the public IP address assigned to the Control Center VM - "xxx.xxx.xxx.xxx:9021".  Ensure that the cluster is healthy and that the ksqlDB and connect clusters are attached.
 
