@@ -64,8 +64,8 @@ Run each of the following command from the linux shell -
       <img width="922" alt="Screen Shot 2022-09-02 at 1 41 02 PM" src="https://user-images.githubusercontent.com/100879140/188217552-bdcf31ec-e9a1-4a1d-9fc2-d807c050e9d1.png">
 
   2. Once both properties files are updated and saved you can start the services:
-     - Zookeeper:  systemctrl start confluent-zookeeper
-     - Broker: systemctl start confluent-server
+     - Zookeeper:  sudo systemctl start confluent-zookeeper
+     - Broker: sudo systemctl start confluent-server
 
   3. Check the status of both services:
      - systemctl status confluent*
