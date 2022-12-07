@@ -37,7 +37,7 @@ Run each of the following command from the linux shell -
 5.  sudo wget -qO - https://packages.confluent.io/deb/7.2/archive.key | sudo apt-key add -
 6.  sudo apt-get install software-properties-common
 7.  sudo apt-get update
-8.  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/7.2 stable main"
+8.  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/7.3 stable main"
 9.  sudo add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"
 10.  sudo apt-get update && sudo apt-get install   confluent-platform
 11.  sudo apt-get update && sudo apt-get install confluent-platform
