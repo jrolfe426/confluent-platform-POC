@@ -38,10 +38,11 @@ Run each of the following command from the linux shell -
 6.  sudo apt-get install software-properties-common
 7.  sudo apt-get update
 8.  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/7.2 stable main"
-    sudo add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"9.  sudo apt-get update && sudo apt-get install   confluent-platform
-9.  sudo apt-get update && sudo apt-get install confluent-platform
-10.  sudo apt-get update
-11.  sudo apt install default-jre
+9.  sudo add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"
+10.  sudo apt-get update && sudo apt-get install   confluent-platform
+11.  sudo apt-get update && sudo apt-get install confluent-platform
+12.  sudo apt-get update
+13.  sudo apt install default-jre
 
 ## CP Configuration:
 - Zookeeper-Broker Deployment
