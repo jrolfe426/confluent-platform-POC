@@ -34,7 +34,7 @@ Run each of the following command from the linux shell -
 2.  sudo apt-get upgrade
 3.  sudo apt-get install wget
 4.  sudo apt-get -y install gnupg
-5.  sudo wget -qO - https://packages.confluent.io/deb/7.2/archive.key | sudo apt-key add -
+5.  sudo wget -qO - https://packages.confluent.io/deb/7.3/archive.key | sudo apt-key add -
 6.  sudo apt-get install software-properties-common
 7.  sudo apt-get update
 8.  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/7.3 stable main"
